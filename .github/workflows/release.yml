@@ -145,7 +145,7 @@ jobs:
           cp target/condense-runner "condense-${{ matrix.target }}"
 
       - name: Upload artifact for signing
-        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808 # v4
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v4
         with:
           name: condense-${{ matrix.target }}
           path: condense/condense-${{ matrix.target }}
@@ -183,7 +183,7 @@ jobs:
           ./packaging/deb/build-deb.sh target/condense-runner "$VERSION" amd64
 
       - name: Upload .deb for signing
-        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808 # v4
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v4
         with:
           name: condense-deb
           path: condense/condense_*.deb
