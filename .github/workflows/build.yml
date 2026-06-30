@@ -19,7 +19,7 @@ jobs:
       run:
         working-directory: condense
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Set up GraalVM JDK 21
         uses: graalvm/setup-graalvm@v1
@@ -68,7 +68,7 @@ jobs:
             artifact-name: condense-macos-arch
             binary-name: condense-runner
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Setup MSVC (Windows only)
         if: runner.os == 'Windows'
